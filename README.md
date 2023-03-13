@@ -1,4 +1,4 @@
-# Berly_profile_longcong
+# Beryl_profile_longcong
 Beryl Consulting data scientist project
 
 # First : Connect to Twitter database via API
