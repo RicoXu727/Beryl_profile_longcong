@@ -62,7 +62,7 @@ Before we feed our data to the ML models, we should test the level of missing va
 
 # ML Model 1 : Topic modeling (LDA): 
 
-The LDS identify topics by the frequency of words and phrases in the Twitter data to understand the topics and industry trends that companies focus on.
+The LDA (Latent Dirichlet Allocation) identify topics by the frequency of words and phrases in the Twitter data to understand the topics and industry trends that companies focus on. (LDA is a probabilistic model used for topic modeling, which aims to identify the underlying topics in a set of documents by analyzing the distribution of words within them.)
 
 Firstly import the CSV into pandas form and then perform some necessary conversions on the 'text' column that we want to analyze.
 
@@ -81,7 +81,11 @@ From the results, it seems that the model is somewhat overtrained and the inclus
 Using the method without BART, I built a model with 10 topics where each topic is a combination of keywords, and each keyword contributes a certain weightage to the topic. The textual result is not very intuitive and is easier to observe when we visualize it by using pyLDAvis package.  We can see that **Immuta, Ai,amp** are some of the most frequently occurring keywords in the text. This is strong evidence that intel capital cares deeply about the technology market. Immuta and Amp'd Mobile are both software development companies, and intel capital has tweeted about them several times.
 
 
-# ML Model 2 : Entity identification : 
+# ML Model 2 : Entity identification (NER): 
+
+What is NER (Named-Entity-Recognition)?
+
+The goal of NER is to identify and classify the named entities in a given text into predefined categories, such as person names, location names, organization names, and so on.
 
 To know some of the most frequent company names, names of people or geographical locations in interl capital's tweets, we can use Entity identification to analyze the text, specificly, Named-Entity-Recognition (NER). The model is able to accept a wide range of textual inputs, so some good results can be obtained without having to process the textual data too much. But we still have to remove the default urls at the end of the text. 
 
