@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>readme</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="beryl_profile_longcong" class="level1">
+<h1>Beryl_profile_longcong</h1>
+<p>Beryl Consulting data scientist project</p>
+</section>
+<section id="clone-repositories" class="level1">
+<h1>Clone repositories</h1>
+<pre><code>git clone 'https://github.com/RicoXu727/COMS-4111-Project1-Somya-Longcong.git'</code></pre>
+<p>Install required packages</p>
+<pre><code>pip install -r requirements.txt</code></pre>
+</section>
+<section id="first-connect-to-twitter-database-via-api" class="level1">
+<h1>First : Connect to Twitter database via API</h1>
+<p>Example of one scraped data record</p>
+<pre><code>{"created_at": "Tue Jan 10 17:38:33 +0000 2023", 
+"id": 1612866496920981504, 
+"id_str": "1612866496920981504", 
+"full_text": "Intel Capital's Managing Director &amp;amp; Head of Investment Operations @jenny_ard sits on the board of directors for Fabric8Labs &amp;amp; is proud to work with the team to support their unique printing process that disrupts traditional high-precision metal manufacturing methods.", "truncated": false, "display_text_range": [0, 275], 
+"entities": {"hashtags": [], "symbols": [], "user_mentions": [{"screen_name": "jenny_ard", "name": "Jennifer Ard", "id": 4073475314, "id_str": "4073475314", "indices": [70, 80]}], "urls": []}, "source": "&lt;a href=\"https://mobile.twitter.com\" rel=\"nofollow\"&gt;Twitter Web App&lt;/a&gt;", "in_reply_to_status_id": 1612866495536836609, "in_reply_to_status_id_str": "1612866495536836609", "in_reply_to_user_id": 27994823, "in_reply_to_user_id_str": "27994823", "in_reply_to_screen_name": "intelcapital", "user": {"id": 27994823, "id_str": "27994823", "name": "Intel Capital", "screen_name": "intelcapital", "location": "Santa Clara, CA", "description": "A force multiplier for early stage startups - inspiring and investing in the future of compute.", "url": "https://t.co/RmwMrNPuPq", "entities": {"url": {"urls": [{"url": "https://t.co/RmwMrNPuPq", "expanded_url": "http://www.intelcapital.com", "display_url": "intelcapital.com", "indices": [0, 23]}]}, "description": {"urls": []}}, "protected": false, "followers_count": 29130, "friends_count": 1102, "listed_count": 1130, "created_at": "Tue Mar 31 23:33:16 +0000 2009", "favourites_count": 1758, "utc_offset": null, "time_zone": null, "geo_enabled": true, "verified": true, "statuses_count": 5828, "lang": null, "contributors_enabled": false, "is_translator": false, "is_translation_enabled": false, "profile_background_color": "028CD7", "profile_background_image_url": "http://abs.twimg.com/images/themes/theme4/bg.gif", "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme4/bg.gif", "profile_background_tile": false, "profile_image_url": "http://pbs.twimg.com/profile_images/1468279253242314752/Afa7DCr7_normal.jpg", 
+"profile_image_url_https": "https://pbs.twimg.com/profile_images/1468279253242314752/Afa7DCr7_normal.jpg", 
+"profile_banner_url": "https://pbs.twimg.com/profile_banners/27994823/1638900028", "profile_link_color": "0099B9", "profile_sidebar_border_color": "FFFFFF", "profile_sidebar_fill_color": "F2F2F2", "profile_text_color": "000000", "profile_use_background_image": true, "has_extended_profile": false, "default_profile": false, "default_profile_image": false, "following": false, "follow_request_sent": false, 
+"notifications": false, "translator_type": "none", "withheld_in_countries": []}, "geo": null, 
+"coordinates": null, "place": null, "contributors": null, "is_quote_status": false, 
+"retweet_count": 0, "favorite_count": 0, "favorited": false, "retweeted": false, "lang": "en"}</code></pre>
+</section>
+<section id="second-deal-with-raw-data" class="level1">
+<h1>Second : deal with raw data</h1>
+<ol start="2" type="a">
+<li><p>Acquire and integrate the data into a single usable format.</p></li>
+<li><p>Evaluate the quality of the data, clean them and modify as necessary.</p></li>
+<li><p>Transform the data into a format that is suitable for data mining.</p></li>
+</ol>
+<p>Identify the content of their text that is relevant to the investment</p>
+</section>
+<section id="correlate-and-cluster-their-engagements-with-other-professional-peers-andor-companies." class="level1">
+<h1>Correlate and cluster their engagements with other professional peers and/or companies.</h1>
+</section>
+<section id="collect-and-monitor-the-content-they-share" class="level1">
+<h1>Collect and monitor the content they share</h1>
+<p>Use the poll function to update the collected data each time a request is sent</p>
+</section>
+<section id="identify-potential-areas-of-interest-or-collaboration-based-on-the-data-collected." class="level1">
+<h1>Identify potential areas of interest or collaboration based on the data collected.</h1>
+<p>Determine their investment type and investment direction</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
