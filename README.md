@@ -13,7 +13,7 @@ Install required packages
 pip install -r requirements.txt
 ```
 
-# First : Connect to Twitter database via API
+# Connect to Twitter database via API
 
 Example of one scraped data record
 ```
@@ -30,7 +30,7 @@ Example of one scraped data record
 ```
 
 
-# Second : deal with raw data
+# Deal with raw data
 
 After getting the data, by getting all the keys in the json, I filtered out some attributes that I thought were useful for the study and directly removed some redundant variables. Then write to csv file line by line. Here is the attributes I choose and their explanation respectively:
 | Attribute name | Explanation |
