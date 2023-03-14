@@ -108,6 +108,12 @@ To know some of the most frequent company names, names of people or geographical
 
 However, we can clearly find a small flaw in this model, which does not distinguish well between corporate organizations and human names. Even if it does not give us a clear classification, we can still get useful hints from the model results. For example, Sunil Kurkure is often mentioned in interl capital, which is the senior management of interl capital as well as Analytics CEO Andrea Remyn Stone at Alkymi which may imply that intel capital are very concerned Alkymi or already have a partnership with it.
 
+<img width="311" alt="image" src="https://user-images.githubusercontent.com/106196996/225162818-ebab53f4-8abc-4561-857f-7311d6d52797.png">
+
+
+<img width="1403" alt="image" src="https://user-images.githubusercontent.com/106196996/225162551-41e87ef9-c4f4-4a99-a4b3-8f1908fb31cf.png">
+
+
 
 # References
 
