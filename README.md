@@ -1,8 +1,22 @@
 # Beryl_profile_longcong
-Beryl Consulting data scientist project
 
+Hi there, this is Longcong from Columbia Engineering. The brief introduction is for Beryl Consulting data scientist project. If you have suggestions， feel free to contact with me, here is my email:
 
-# Clone repositories
+```
+lx2305@columbia.edu
+```
+You can run IC_data_analysis.ipynb file directly since the data scraped from Twitter have been save as json and csv files. But before that, you need to create a new environment and install some necessary packages, please run the following command in your terminal.
+
+# Create a new enviroment and clone the repository
+
+Build a new env (Please install version 3.9, as some packages are not available in more advanced versions of python)
+```
+conda create -name <your env name> python=3.9
+```
+Activate new env
+```
+conda activate <your env name>
+```
 
 ```
 git clone 'https://github.com/RicoXu727/Beryl_profile_longcong.git'
@@ -12,6 +26,7 @@ Install required packages
 ```
 pip install -r requirements.txt
 ```
+
 
 # Connect to Twitter database via API
 
