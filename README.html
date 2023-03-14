@@ -51,7 +51,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="clone-repositories" class="level1">
 <h1>Clone repositories</h1>
-<pre><code>git clone 'https://github.com/RicoXu727/COMS-4111-Project1-Somya-Longcong.git'</code></pre>
+<pre><code>git clone 'https://github.com/RicoXu727/Beryl_profile_longcong.git'</code></pre>
 <p>Install required packages</p>
 <pre><code>pip install -r requirements.txt</code></pre>
 </section>
@@ -71,12 +71,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="second-deal-with-raw-data" class="level1">
 <h1>Second : deal with raw data</h1>
-<ol start="2" type="a">
-<li><p>Acquire and integrate the data into a single usable format.</p></li>
-<li><p>Evaluate the quality of the data, clean them and modify as necessary.</p></li>
-<li><p>Transform the data into a format that is suitable for data mining.</p></li>
-</ol>
-<p>Identify the content of their text that is relevant to the investment</p>
+<p>After getting the data, by getting all the keys in the json, I filtered out some attributes that I thought were useful for the study and directly removed some redundant variables. Then write to csv file line by line. Here is the attributes I choose and their explanation respectively: | Attribute name | Explanation | | ——– | ——– | | created_at | time stamp, we may want to know the investment preference change | | full_text | core content in our analysis processes |</p>
+<p>To evaluate the quality of the data, I use BART (Bidirectional and Auto-Regressive Transformers) language model which is a denoising self-encoder designed for pre-training sequence-to-sequence models proposed by Facebook. This model can find typos, jumbled characters and correct them. I compare the sentences output by the model with the original text and use ROUGE (Recall-Oriented Understudy for Gisting Evaluation) to calculate the deviation between them. If the deviation is large, it means that the original text has low quality data, and if the deviation is small, it means that the data found from Twitter is of high quality.</p>
+<p>Transform the data into a pandas format that is suitable for data mining.</p>
 </section>
 <section id="correlate-and-cluster-their-engagements-with-other-professional-peers-andor-companies." class="level1">
 <h1>Correlate and cluster their engagements with other professional peers and/or companies.</h1>
@@ -88,6 +85,13 @@ ul.task-list li input[type="checkbox"] {
 <section id="identify-potential-areas-of-interest-or-collaboration-based-on-the-data-collected." class="level1">
 <h1>Identify potential areas of interest or collaboration based on the data collected.</h1>
 <p>Determine their investment type and investment direction</p>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<p>Topic modeling(LDA):</p>
+<pre><code>https://towardsdatascience.com/end-to-end-topic-modeling-in-python-latent-dirichlet-allocation-lda-35ce4ed6b3e0</code></pre>
+<p>Named-Entity-Recognition (NER) on Twitter with Bi-directional LSTM with tensorflow in python :</p>
+<pre><code>https://sandipanweb.wordpress.com/2020/08/30/named-entity-recognition-ner-on-twitter-with-bi-directional-lstm-with-tensorflow-in-python/</code></pre>
 </section>
 
 </main>

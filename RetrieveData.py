@@ -21,11 +21,20 @@ api = tweepy.API(auth)
 
 
 
-# Send request to tweets api
+# # Send request to tweets api
 screen_name = 'intelcapital'
 tweets = tweepy.Cursor(api.user_timeline, screen_name=screen_name, tweet_mode='extended').items(100)
 
 with open('ICtweet.json', 'a') as f:
+    for tweet in tweets:
+        json.dump(tweet._json, f)
+        f.write('\n')
+
+# Send request to tweets api
+screen_name = 'sequoia'
+tweets = tweepy.Cursor(api.user_timeline, screen_name=screen_name, tweet_mode='extended').items(100)
+
+with open('SCtweets.json', 'a') as f:
     for tweet in tweets:
         json.dump(tweet._json, f)
         f.write('\n')

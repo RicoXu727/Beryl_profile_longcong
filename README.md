@@ -32,7 +32,12 @@ Example of one scraped data record
 
 # Second : deal with raw data
 
-After getting the data, by getting all the keys in the json, I filtered out some attributes that I thought were useful for the study and directly removed some redundant variables. Then write to csv file line by line.
+After getting the data, by getting all the keys in the json, I filtered out some attributes that I thought were useful for the study and directly removed some redundant variables. Then write to csv file line by line. Here is the attributes I choose and their explanation respectively:
+| Attribute name | Explanation |
+| -------- | -------- |
+| created_at | time stamp, we may want to know the investment preference change |
+| full_text | core content in our analysis processes |
+
 
 To evaluate the quality of the data, I use BART (Bidirectional and Auto-Regressive Transformers) language model which is a denoising self-encoder designed for pre-training sequence-to-sequence models proposed by Facebook. This model can find typos, jumbled characters and correct them. I compare the sentences output by the model with the original text and use ROUGE (Recall-Oriented Understudy for Gisting Evaluation) to calculate the deviation between them. If the deviation is large, it means that the original text has low quality data, and if the deviation is small, it means that the data found from Twitter is of high quality.
 
