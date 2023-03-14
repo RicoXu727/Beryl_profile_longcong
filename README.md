@@ -95,6 +95,8 @@ From the results, it seems that the model is somewhat overtrained and the inclus
 
 Using the method without BART, I built a model with 10 topics where each topic is a combination of keywords, and each keyword contributes a certain weightage to the topic. The textual result is not very intuitive and is easier to observe when we visualize it by using pyLDAvis package.  We can see that **Immuta, Ai,amp** are some of the most frequently occurring keywords in the text. This is strong evidence that intel capital cares deeply about the technology market. Immuta and Amp'd Mobile are both software development companies, and intel capital has tweeted about them several times.
 
+<img width="1256" alt="image" src="https://user-images.githubusercontent.com/106196996/225162364-8c6f80ee-4387-468c-9e6e-d2af2041621b.png">
+
 
 # ML Model 2 : Entity identification (NER): 
 
