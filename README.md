@@ -17,7 +17,7 @@ Activate new env
 ```
 conda activate <your env name>
 ```
-
+Clone the repository
 ```
 git clone 'https://github.com/RicoXu727/Beryl_profile_longcong.git'
 ```
