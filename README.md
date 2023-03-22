@@ -1,6 +1,6 @@
 # Beryl_profile_longcong
 
-Hi there, this is Longcong from Columbia Engineering. The brief introduction is for Beryl Consulting data scientist project. If you have suggestions， feel free to contact with me, here is my email:
+Hi there, this is Longcong from Columbia Engineering. The brief introduction is for Beryl Consulting data scientist project. If you have suggestions, feel free to contact with me, here is my email:
 
 ```
 lx2305@columbia.edu
